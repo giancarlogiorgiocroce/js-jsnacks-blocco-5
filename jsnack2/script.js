@@ -70,11 +70,14 @@ const arrayZucchine = [
 ******************************/
 function dividiZucchine(){
     for (let i in arrayZucchine){
-        if(arrayZucchine[i].lunghezza < 15){
-            zucchineCorte.push(arrayZucchine[i]);
-        } else{
-            zucchineLunghe.push(arrayZucchine[i]);
-        }
+        // if(arrayZucchine[i].lunghezza < 15){
+        //     zucchineCorte.push(arrayZucchine[i]);
+        // } else{
+        //     zucchineLunghe.push(arrayZucchine[i]);
+        // }
+        
+        (arrayZucchine[i].lunghezza < 15) ? zucchineCorte.push(arrayZucchine[i]) : zucchineLunghe.push(arrayZucchine[i]);
+
     }
 }
 
